@@ -32,13 +32,13 @@ def snowman(snowman_word):
             print("That letter is not in the word , please try again!")
             wrong_guesses_list.append(user_input)
         print_snowman_graphic(len(wrong_guesses_list))
-        print_word_progress_string(snowman_word ,correct_letter_guess_statueses)
+        print_word_progress_string(snowman_word ,correct_letter_guess_statuses)
         if is_word_guessed(snowman_word,correct_letter_guess_statuses):
             print("congratulations , you won!")
             return None
         else:
             print("sorry,you lost , the word was {snowman_word}")
-            
+
 
 
 def print_snowman_graphic(wrong_guesses_count):
